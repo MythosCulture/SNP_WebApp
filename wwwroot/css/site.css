@@ -1,0 +1,48 @@
+﻿canvas {
+    position: fixed !important;
+}
+
+#banner {
+    padding: 0 2rem;
+    height: 7rem;
+    background-color: #e9f0f2;
+    border-bottom: 1rem solid #5e608c;
+    margin-bottom: 1rem;
+}
+
+.navbar a {
+    font-size: large;
+    color: #5e608c;
+    transition: transform 0.1s ease-in-out;
+}
+    .navbar a:visited {
+        color: #5e608c;
+    }
+    .navbar a:hover {
+        color: #ed9885 !important;
+        text-shadow: 0 0 1rem #ffffff;
+        transform: scale(1.25, 1.25);
+    }
+
+.navbar-brand {
+    padding-left: 2rem;
+    color: #5e608c !important;
+}
+
+.btn-primary {
+    background-color: #5e608c !important;
+    border-color: #5e608c !important;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #5e608c;
+    background-color: #e9f0f2;
+    border-radius: 2rem;
+}
