@@ -1,0 +1,26 @@
+﻿@*
+    Comments:
+    add layout = null; to deactivate header and footer
+*@
+
+<!DOCTYPE html>
+
+
+<head>
+    <title>Index</title>
+    <style>
+        img {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<nav class="navbar flex-column">
+    <a class="nav-link" href="/">
+        <img src="~/images/bee.png"/>
+    </a>
+    @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })
+    <a class="nav-link" href="https://github.com/MythosCulture" target="_blank">GitHub</a>
+    <a class="nav-link" href="https://www.linkedin.com/in/sylvester-negron-b11618149/" target="_blank">LinkedIn</a>
+</nav>

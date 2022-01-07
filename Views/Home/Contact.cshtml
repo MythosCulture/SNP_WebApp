@@ -1,0 +1,55 @@
+﻿@model Webapp_project.Models.ContactModel
+
+@{
+
+}
+
+<head>
+    <title>Contact</title>
+    <style>
+        img {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<div style="text-align: center">
+    <nav class="navbar flex-column">
+        <a class="nav-link" href="/">
+            <img src="~/images/bee.png" />
+        </a>
+    </nav>
+    <h2>Contact Me!</h2>
+    <p>
+        Please fill out the form below or send an email to: NegronSylv@gmail.com
+    </p>
+</div>
+
+<form asp-action="Contact">
+
+    <div class="form-floating mb-3">
+        <input asp-for="Name" class="form-control" id="floatingInput" placeholder="name">
+        <label asp-for="Name" for="floatingInput"></label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label asp-for="Email" for="floatingInput"></label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Subject" class="form-control" id="floatingInput" placeholder="Subject Line">
+        <label asp-for="Subject" for="floatingInput"></label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <textarea asp-for="Message" class="form-control" id="floatingTextarea" placeholder="Enter your message here" style="height: 8rem"></textarea>
+        <label asp-for="Message" for="floatingInput"></label>
+    </div>
+
+    <div class="text-center">
+        <input type="submit" value="Send Message" class="btn btn-primary" />
+    </div>
+
+</form>
