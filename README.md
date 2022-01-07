@@ -1,2 +1,2 @@
 # SNP_WebApp
-Some files put together for a webapp. WIP.
+See temporary deployment link here: http://sylvesternegron.azurewebsites.net/
